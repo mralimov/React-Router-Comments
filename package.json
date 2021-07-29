@@ -1,0 +1,19 @@
+{
+  "name": "react-router-comments",
+  "version": "1.0.0",
+  "description": "User can enter quotes and commet them",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mralimov/React-Router-Comments.git"
+  },
+  "author": "Donnie Alimov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mralimov/React-Router-Comments/issues"
+  },
+  "homepage": "https://github.com/mralimov/React-Router-Comments#readme"
+}
