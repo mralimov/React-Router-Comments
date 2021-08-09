@@ -10,6 +10,7 @@ import LoadingSpinner from '../components/UI/LoadingSpinner';
 function QuoteDetail() {
   const params = useParams();
   const match = useRouteMatch();
+
   const { quoteId } = params;
 
   const {
@@ -36,6 +37,7 @@ function QuoteDetail() {
   }
 
   if (!loadedQuote.text) {
+    console.log(loadedQuote);
     return <p>No Quote was found</p>;
   }
   return (
@@ -43,7 +45,7 @@ function QuoteDetail() {
       <HighlightedQuote text={loadedQuote.text} author={loadedQuote.author} />
       <Route path={match.path} exact>
         <div className='centered'>
-          <Link className='btn--flat' to={`${match.path}/comments`}>
+          <Link className='btn--flat' to={`${match.url}/comments`}>
             Load Comments
           </Link>
         </div>
